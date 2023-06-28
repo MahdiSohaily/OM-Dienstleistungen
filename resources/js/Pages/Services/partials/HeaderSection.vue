@@ -64,12 +64,14 @@ const updateData = () => {
                     <template #form>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Page Title</label>
                             <TextInput id="title" v-model="form.title" type="text" class="mt-1 block w-full"
                                 autocomplete="title" />
                             <InputError :message="form.errors.title" class="mt-2" />
                         </div>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Page Description</label>
                             <TextInput id="title_desc" v-model="form.title_desc" type="text" class="mt-1 block w-full"
                                 autocomplete="title_desc" />
                             <InputError :message="form.errors.title_desc" class="mt-2" />
