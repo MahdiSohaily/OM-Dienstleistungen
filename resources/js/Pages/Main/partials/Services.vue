@@ -65,9 +65,6 @@ const onFileChange = (e) => {
                                 class="mt-1 block w-full" autocomplete="services_title" />
                             <InputError :message="form.errors.services_title" class="mt-2" />
                         </div>
-                        <input type="file" name="filename" class="custom-file-input" id="inputFileUpload"
-                            v-on:change="onFileChange">
-                        <label class="custom-file-label" for="inputFileUpload">Choose file</label>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
                             <TextInput id="services_title_desc" v-model="form.services_title_desc" type="text"

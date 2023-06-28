@@ -65,19 +65,21 @@ const split = (data) => {
                     <template #form>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Post Title</label>
                             <TextInput id="title" v-model="form.title" type="text" class="mt-1 block w-full"
                                 autocomplete="title" />
                             <InputError :message="form.errors.title" class="mt-2" />
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
-                            <label for="intro_text"></label>
+                            <label for="intro_text">Post Intro</label>
                             <textarea class="mt-1 block w-full form-control form-control-lg" name="content"
                                 v-model="form.intro_text" id="intro_text" cols="30" rows="10"></textarea>
                             <InputError :message="form.errors.intro_text" class="mt-2" />
                         </div>
 
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="post body">Post Body</label>
                             <textarea class="mt-1 block w-full form-control form-control-lg" name="content"
                                 v-model="form.content" id="content" cols="30" rows="10"></textarea>
                             <InputError :message="form.errors.content" class="mt-2" />
