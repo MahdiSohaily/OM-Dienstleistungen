@@ -60,12 +60,6 @@ const submit = () => {
                                     </div>
                                 </form>
                             </div>
-                            <!-- <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                                    <Link v-if="canResetPassword" :href="route('password.request')"
-                                        class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                    Forgot your password?
-                                    </Link>
-                                </div> -->
                         </div>
                     </div>
                     <div
@@ -76,7 +70,7 @@ const submit = () => {
                                 class="position-absolute opacity-4 start-0">
                             <div class="position-relative">
                                 <img class="max-width-500 w-100 position-relative z-index-2"
-                                    :src="'./assets/img/illustrations/chat.png'">
+                                    :src="'./assets/img/logo.png'">
                             </div>
                             <h4 class="mt-5 text-white font-weight-bolder">"Aufmerksamkeit ist die neue Währung"</h4>
                             <p class="text-white">
