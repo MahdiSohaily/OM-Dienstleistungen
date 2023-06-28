@@ -64,11 +64,13 @@ const updateData = () => {
                     <template #form>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Map Section Title</label>
                             <TextInput id="map_title" v-model="form.map_title" type="text" class="mt-1 block w-full"
                                 autocomplete="map_title" />
                             <InputError :message="form.errors.map_title" class="mt-2" />
                         </div>
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Map Section Description</label>
                             <textarea class="mt-1 block w-full form-control form-control-lg" name="map_desc"
                                 v-model="form.map_desc" id="map_desc" cols="30" rows="10"></textarea>
                             <InputError :message="form.errors.map_desc" class="mt-2" />
