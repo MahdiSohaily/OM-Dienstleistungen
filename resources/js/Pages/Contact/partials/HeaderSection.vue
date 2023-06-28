@@ -87,12 +87,14 @@ const updateData = () => {
                     <template #form>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Form Title</label>
                             <TextInput id="form_title" v-model="form.form_title" type="text" class="mt-1 block w-full"
                                 autocomplete="form_title" />
                             <InputError :message="form.errors.form_title" class="mt-2" />
                         </div>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
+                            <label for="">Form Description</label>
                             <TextInput id="form_desc" v-model="form.form_desc" type="text" class="mt-1 block w-full"
                                 autocomplete="form_desc" />
                             <InputError :message="form.errors.form_desc" class="mt-2" />
