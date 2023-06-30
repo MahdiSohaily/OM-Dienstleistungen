@@ -19,11 +19,6 @@ const props = defineProps({
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link text-white opacity-8" :href="route('blog')" target="_blank">
-              Blog
-              </Link>
-            </li>
-            <li class="nav-item">
               <Link class="nav-link text-white opacity-8" :href="route('services')" target="_blank">
               Dienstleistungen
               </Link>

@@ -54,14 +54,6 @@ const props = defineProps({
                                     </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link nav-link-icon me-2" :href="route('blog')" target="_blank">
-                                    <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Blog">
-                                        Blog
-                                    </p>
-                                    </Link>
-                                </li>
-                                <li class="nav-item">
                                     <Link class="nav-link nav-link-icon me-2" :href="route('contact')" target="_blank">
                                     <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"
                                         data-bs-placement="bottom" title="Contact Us">
