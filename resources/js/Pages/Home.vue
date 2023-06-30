@@ -131,7 +131,7 @@ const split = (data) => {
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="bg-gradient-dark position-relative border-radius-xl">
+                <div class=" position-relative border-radius-xl">
                     <img :src="'../assets/img/shapes/waves-white.svg'" alt="pattern-lines"
                         class="position-absolute start-0 top-md-0 w-100 opacity-6">
                     <div class="container py-md-7 py-3 postion-relative z-index-2">
@@ -142,7 +142,7 @@ const split = (data) => {
                             </div>
                             <div class="col-md-7 col-12 ps-5">
                                 <h3 class="text-gradient text-info">{{ company.name }}</h3>
-                                <p v-for="item of split(main_page.mini_description)" class="pe-md-5 text-white">
+                                <p v-for="item of split(main_page.mini_description)" class="pe-md-5 text-">
                                     {{ item }}
                                 </p>
                                 <Link :href="route('about')" target="blank" rel="nofollow"
