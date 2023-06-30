@@ -158,7 +158,7 @@ const split = (data) => {
         </div>
 
     </section>
-    <section class="py-5">
+    <!-- <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
@@ -251,7 +251,7 @@ const split = (data) => {
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <Footer :name="company.name" />
 </template>
