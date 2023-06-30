@@ -64,10 +64,7 @@ Route::middleware([
     });
 
     Route::controller(PolicyController::class)->group(function () {
-        Route::get('/blogPage', 'index')->name('blog.show');
-        Route::get('/blogPage/{id}', 'edit')->name('blog.edit');
-        Route::post('/blogPage/store', 'store')->name('blog.store');
-        Route::post('/blogPage/update', 'update')->name('blog.update');
+        Route::get('/policy', 'index')->name('blog.show');
     });
 
     Route::controller(ContactPageController::class)->group(function () {
