@@ -1,16 +1,13 @@
 <?php
 
 use App\Http\Controllers\AboutPageController;
-use App\Http\Controllers\BlogPageController;
+use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MainPageController;
 use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\websiteController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-use App\Mail\MyTestEmail;
-use Illuminate\Support\Facades\Mail;
 
 
 /*
@@ -64,6 +61,13 @@ Route::middleware([
         Route::get('/servicesPage', 'index')->name('services.show');
         Route::post('/servicesPage', 'storeHeader')->name('services.storeHeader');
         Route::post('/servicesPage/update', 'update')->name('services.update');
+    });
+
+    Route::controller(PolicyController::class)->group(function () {
+        Route::get('/blogPage', 'index')->name('blog.show');
+        Route::get('/blogPage/{id}', 'edit')->name('blog.edit');
+        Route::post('/blogPage/store', 'store')->name('blog.store');
+        Route::post('/blogPage/update', 'update')->name('blog.update');
     });
 
     Route::controller(ContactPageController::class)->group(function () {
