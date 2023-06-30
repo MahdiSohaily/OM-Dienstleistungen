@@ -28,6 +28,7 @@ Route::controller(websiteController::class)->group(function () {
     Route::get('/blog', 'blog')->name('blog');
     Route::get('/blog/{id}', 'post')->name('post');
     Route::get('/contact', 'contact')->name('contact');
+    Route::get('/policy', 'policy')->name('policy');
 });
 
 
@@ -61,10 +62,6 @@ Route::middleware([
         Route::get('/servicesPage', 'index')->name('services.show');
         Route::post('/servicesPage', 'storeHeader')->name('services.storeHeader');
         Route::post('/servicesPage/update', 'update')->name('services.update');
-    });
-
-    Route::controller(PolicyController::class)->group(function () {
-        Route::get('/policy', 'index')->name('blog.show');
     });
 
     Route::controller(ContactPageController::class)->group(function () {

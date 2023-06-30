@@ -38,12 +38,12 @@ class websiteController extends Controller
         ]);
     }
 
-    public function blog()
+    public function policy()
     {
         $company_info = DB::table('company')->first();
         $blog_page = DB::table('blog_page')->first();
         $posts = DB::table('posts')->get();
-        return Inertia::render('website/Pages/blog/Blog', [
+        return Inertia::render('website/Pages/policy/policy', [
             'company' => $company_info,
             'blog_page' => $blog_page,
             'posts' => $posts
