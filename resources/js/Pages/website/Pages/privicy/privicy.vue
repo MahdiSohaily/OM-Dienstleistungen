@@ -80,6 +80,8 @@ Deutschland
                                 href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr</a>. <br>
                             Unsere E-Mail-Adresse finden Sie oben im Impressum.
                         </p>
+                        <h4>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h4>
+                        <p>Verbraucherstreitbeilegung/Universalschlichtungsstelle Verbraucherschlichtungsstelle teilzunehmen.</p>
                     </div>
                 </div>
             </div>

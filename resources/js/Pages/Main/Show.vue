@@ -4,7 +4,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import Header from './partials/PageHeader.vue';
 import Services from './partials/Services.vue';
 import Mini from './partials/Mini.vue';
-import Blog from './partials/Blog.vue';
+import FAQ from './partials/FAQ.vue';
 
 const props = defineProps({
     company: Object,
@@ -20,7 +20,7 @@ const props = defineProps({
         <Header :company="company" :main_page="main_page" />
         <Services :main_page="main_page" />
         <Mini :company="company" :main_page="main_page" />
-        <Blog :main_page="main_page" :faqs="faqs" />
+        <FAQ :main_page="main_page" :faqs="faqs" />
         <footer class="footer py-5 bg-gradient-dark position-relative overflow-hidden">
             <div class="container">
                 <div class="row">
