@@ -49,7 +49,7 @@ Route::middleware([
         Route::post('/main', 'storeHeader')->name('main.storeHeader');
         Route::post('/main/services', 'storeServices')->name('main.storeServices');
         Route::post('/main/mini', 'storeMini')->name('main.storeMini');
-        Route::post('/main/blog', 'storeBlog')->name('main.storeBlog');
+        Route::post('/main/faq', 'storefaqs')->name('main.storefaqs');
     });
 
     Route::controller(AboutPageController::class)->group(function () {
