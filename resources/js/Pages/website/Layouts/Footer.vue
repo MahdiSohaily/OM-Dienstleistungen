@@ -38,7 +38,7 @@ const props = defineProps({
             </li>
           </ul>
           <p class="text-sm text-white mb-0">
-            Urheberrechte © 2023 von O&M Dienstleistungen.
+            Urheberrechte © 2023 von {{ name }}.
           </p>
         </div>
         <div class="col-lg-6 ms-auto text-center ">

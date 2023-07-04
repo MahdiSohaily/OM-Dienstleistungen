@@ -41,9 +41,9 @@ const updateData = () => {
                                 <p class="lead mb-4 text-white opacity-8">
                                     {{ form.title_desc }}
                                 </p>
-                               <!--  <a :href="'mailto:' + company.email_address" type="submit" class="btn bg-white text-dark">{{
+                                 <a :href="'mailto:' + company.email_address" type="submit" class="btn bg-white text-dark">{{
                                     form.mail_to_title }}</a>
-                                <h6 class="text-white mb-2 mt-5">{{ form.social_title }}</h6> -->
+                               <!-- <h6 class="text-white mb-2 mt-5">{{ form.social_title }}</h6> -->
                                 <!-- <div class="d-flex justify-content-center"> -->
                                     <!-- <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a> -->
                                     <!-- <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a> -->
@@ -78,11 +78,11 @@ const updateData = () => {
                             <InputError :message="form.errors.title_desc" class="mt-2" />
                         </div>
                         <!-- Name -->
-                        <!-- <div class="col-span-6 sm:col-span-4">
+                        <div class="col-span-6 sm:col-span-4">
                             <TextInput id="mail_to_title" v-model="form.mail_to_title" type="text" class="mt-1 block w-full"
                                 autocomplete="mail_to_title" />
                             <InputError :message="form.errors.mail_to_title" class="mt-2" />
-                        </div> -->
+                        </div>
                         <!-- Name -->
                         <!-- <div class="col-span-6 sm:col-span-4">
                             <TextInput id="social_title" v-model="form.social_title" type="text" class="mt-1 block w-full"
