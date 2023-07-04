@@ -50,6 +50,30 @@ class websiteController extends Controller
         ]);
     }
 
+    public function policy()
+    {
+        $company_info = DB::table('company')->first();
+        $blog_page = DB::table('blog_page')->first();
+        $posts = DB::table('posts')->get();
+        return Inertia::render('website/Pages/policy/policy', [
+            'company' => $company_info,
+            'blog_page' => $blog_page,
+            'posts' => $posts
+        ]);
+    }
+
+    public function privicy()
+    {
+        $company_info = DB::table('company')->first();
+        $blog_page = DB::table('blog_page')->first();
+        $posts = DB::table('posts')->get();
+        return Inertia::render('website/Pages/privicy/privicy', [
+            'company' => $company_info,
+            'blog_page' => $blog_page,
+            'posts' => $posts
+        ]);
+    }
+
     public function post($id)
     {
         $company_info = DB::table('company')->first();

@@ -64,25 +64,12 @@ const updateData = () => {
                 </div>
                 <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
                     <div class="card shadow-lg">
-                        <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                        <div class="card-header p-0 mx-3 my-3 position-relative z-index-1">
                             <div class="d-block blur-shadow-image">
                                 <img :src="page.about_photo" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
                             </div>
-                            <div class="colored-shadow"
-                                style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg&quot;);">
-                            </div>
                         </div>
-                        <div class="card-body">
-
-                            <h5 class="mt-3">
-                                Get insights on Search
-                            </h5>
-                            <p>
-                                Website visitors today demand a frictionless user expericence — especially when using
-                                search. Because of
-                                the hight standards.
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

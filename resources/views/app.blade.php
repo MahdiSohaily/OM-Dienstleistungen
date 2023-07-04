@@ -22,6 +22,62 @@
 
         <!-- CSS Files -->
         <link id="pagestyle" href="{{ asset('./assets/css/soft-design-system.css?v=1.0.9') }}" rel="stylesheet" />
+        <style>
+            .faq-heading {
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.faq-card {
+  border: 1px solid #dce0e8;
+  border-radius: 6px;
+  padding: 24px 20px;
+  margin-bottom: 12px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-open-icon {
+  font-size: 22px;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-weight: 700;
+}
+
+details[open] .faq-open-icon {
+  top: 18px;
+  right: 24px;
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  color: #0186ff;
+  font-weight: 500;
+}
+
+details[open] .faq-card-spoiler {
+  display: inline-block;
+  padding-top: 8px;
+  color: #8b8b9a;
+}
+
+.faq-aftertext {
+  text-align: center;
+  color: #8b8b9a;
+}
+        </style>
 
         <!-- Scripts -->
         @routes

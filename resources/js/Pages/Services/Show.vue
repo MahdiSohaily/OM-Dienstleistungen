@@ -5,12 +5,13 @@ import HeaderSection from './partials/HeaderSection.vue';
 import Service from './partials/Service.vue';
 
 const props = defineProps({
+    company_info: Object,
     services_page: Object,
     services: Array
 });
 </script>
 <template>
-    <AppLayout :title="'Services'">
+    <AppLayout :title="'Services'" :name="props.company_info.name">
 
         <Head title="Dienstleistungen" />
         <HeaderSection :page="services_page" />

@@ -38,15 +38,7 @@ const updateData = () => {
                         <p class="lead mb-4 text-white opacity-8">
                             {{ form.title_desc }}
                         </p>
-                        <a :href="'mailto:' + company.email_address" type="submit" class="btn bg-white text-dark">{{
-                            form.mail_to_title }}</a>
-                        <h6 class="text-white mb-2 mt-5">{{ social_title }}</h6>
-                        <div class="d-flex justify-content-center">
-                            <a :href="social.facebook"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-                            <a :href="social.instagram"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
-                            <a :href="social.twitter"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
-                            <a :href="social.linkedin"><i class="fab fa-linkedin text-lg text-white"></i></a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

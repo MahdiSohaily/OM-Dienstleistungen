@@ -12,7 +12,7 @@ const props = defineProps({
 
 </script>
 <template>
-    <AppLayout :title="'Blog'">
+    <AppLayout :title="'Blog'" :name="props.company.name">
 
         <Head title="Blog" />
         <HeaderSection :company="company" :page="page" :count="posts.length" />

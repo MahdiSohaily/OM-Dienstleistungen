@@ -18,13 +18,13 @@ const form = useForm({
     name: props.company.name,
     address: props.company.address,
     stablish_year: props.company.stablish_year,
-    info: props.company.company_info,
+    company_info: props.company.company_info,
     email_address: props.company.email_address,
     phone: props.company.phone,
 });
 
 const updateData = () => {
-    form.post(route('main.storeHeader'), {
+    form.post(route('dashboard.storeHeader'), {
         preserveScroll: true,
         onSuccess: () => { },
     });
@@ -34,10 +34,10 @@ const updateData = () => {
 </script>
 
 <template>
-    <AppLayout title="Dashboard">
+    <AppLayout title="Dashboard" :name="props.company.name">
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
@@ -58,7 +58,7 @@ const updateData = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
@@ -79,7 +79,7 @@ const updateData = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+                <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
@@ -94,27 +94,6 @@ const updateData = () => {
                                 <div class="col-4 text-end">
                                     <div class="icon icon-shape bg-gradient-info shadow text-center border-radius-md">
                                         <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6">
-                    <div class="card">
-                        <div class="card-body p-3">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div class="numbers">
-                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Sales</p>
-                                        <h5 class="font-weight-bolder mb-0">
-                                            {{ services }}
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-4 text-end">
-                                    <div class="icon icon-shape bg-gradient-info shadow text-center border-radius-md">
-                                        <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -167,9 +146,11 @@ const updateData = () => {
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label for="info">Company info</label>
-                                                            <textarea name="info" aria-describedby="addon-right addon-left"
-                                                                rows="5" class="form-control">{{ form.info }}</textarea>
+                                                            <label for="company_info">Company info</label>
+                                                            <textarea name="company_info"
+                                                                aria-describedby="addon-right addon-left" rows="5"
+                                                                class="form-control"
+                                                                v-model="form.company_info">{{ form.company_info }}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>

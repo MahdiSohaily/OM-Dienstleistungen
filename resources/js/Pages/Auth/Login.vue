@@ -60,20 +60,26 @@ const submit = () => {
                                     </div>
                                 </form>
                             </div>
+                            <!-- <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                                    <Link v-if="canResetPassword" :href="route('password.request')"
+                                        class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                    Forgot your password?
+                                    </Link>
+                                </div> -->
                         </div>
                     </div>
                     <div
                         class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
                         <div
-                            class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+                            class="position-relative bg-gradient- h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
                             <img :src="'./assets/img/shapes/pattern-lines.svg'" alt="pattern-lines"
                                 class="position-absolute opacity-4 start-0">
                             <div class="position-relative">
                                 <img class="max-width-500 w-100 position-relative z-index-2"
                                     :src="'./assets/img/logo.png'">
                             </div>
-                            <h4 class="mt-5 text-white font-weight-bolder">"Aufmerksamkeit ist die neue Währung"</h4>
-                            <p class="text-white">
+                            <h4 class="mt-5 text-secondary font-weight-bolder">"Aufmerksamkeit ist die neue Währung"</h4>
+                            <p class="text-secondary">
                                 Je müheloser das Schreiben aussieht, desto mehr Mühe hat der Autor
                                 tatsächlich in den Prozess gesteckt.
                             </p>

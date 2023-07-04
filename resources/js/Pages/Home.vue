@@ -3,8 +3,7 @@ import { Link, Head } from '@inertiajs/vue3';
 import Navbar from './website/Layouts/Navbar.vue';
 import Header from './website/Layouts/Header.vue';
 import Footer from './website/Layouts/Footer.vue';
-
-
+import { onMounted } from 'vue';
 
 const props = defineProps({
     'company': Object,
@@ -14,6 +13,18 @@ const props = defineProps({
 const split = (data) => {
     return data.split('\n');
 }
+
+onMounted(() => {
+    let summaryCollection = document.getElementsByTagName('summary');
+    let signsCollection = document.getElementsByClassName('faq-open-icon');
+
+    for (let i = 0; i < summaryCollection.length; i++) {
+        summaryCollection[i].onclick = function () {
+            if (signsCollection[i].innerHTML === '+') signsCollection[i].innerHTML = '—';
+            else signsCollection[i].innerHTML = '+';
+        }
+    }
+})
 </script>
 
 <template>
@@ -161,96 +172,63 @@ const split = (data) => {
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mx-auto text-center">
-                    <h2 class="mb-0">{{ main_page.blog_title }}</h2>
-                    <p class="lead">
-                        {{ main_page.blog_title_desc }}
-                    </p>
-                    <Link :href="route('blog')" target="blank" rel="nofollow" class="text-info icon-move-right">
-                    Erkunde mehr
-                    <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                    </Link>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-sm-5">
-            <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl"
-                style="background-image:url(./assets/img/basic-leaning.jpg);">
-                <span class="mask bg-gradient-dark"></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 ms-lg-5">
-                            <h1 class="text-white">Was ist eine Grundreinigung?</h1>
-                            <p class="lead text-white opacity-8">
-                                Zur Grundreinigung eines Unternehmens gehören in der Regel das Staubwischen, Wischen und
-                                Desinfizieren von Oberflächen, das Staubsaugen und Wischen von Böden, das Reinigen von
-                                Toiletten und das Leeren von Mülleimern.
-                            </p>
-                            <Link :href="route('blog')" class="text-info icon-move-right">
-                            Weiterlesen
-                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                            </Link>
-                        </div>
+                <div class="row justify-content-center text-center my-sm-5">
+                    <div class="col-lg-6">
+                        <h2 class="text-dark mb-0">Frequently asked questions</h2>
+                        <p class="faq-aftertext">If you cannot find answer to your question in our FAQ, you can always<br>
+                            contact us. We will answer shortly!
+                        </p>
+                        <Link :href="route('contact')" target="blank" rel="nofollow" class="text-info icon-move-right">
+                        Erkunde mehr
+                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                        </Link>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="info-horizontal bg-gray-100 border-radius-xl p-5">
-
-                        <div class="description">
-                            <h5>Window cleaning like a pro</h5>
-                            <p>
-                                Um Fenster wie ein Profi zu reinigen, wählen Sie zunächst die richtigen Werkzeuge aus,
-                                darunter einen hochwertigen Rakel, einen Schrubber, einen Eimer, eine Reinigungslösung und
-                                ein Mikrofasertuch. Reinigen Sie den Fensterrahmen und die Fensterbank, bevor Sie die
-                                Reinigungslösung mit kreisenden Bewegungen auf das Fenster auftragen.
-                            </p>
-                            <Link :href="route('blog')" class="text-info icon-move-right">
-                            Weiterlesen
-                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 px-lg-1 mt-lg-0 mt-4">
-                    <div class="info-horizontal bg-gray-100 border-radius-xl p-5">
-                        <div class="description">
-                            <h5>Was ist eine Unterhaltsreinigung?</h5>
-                            <p>
-                                Unter Unterhaltsreinigung versteht man die regelmäßigen und routinemäßigen
-                                Reinigungsarbeiten, die durchgeführt werden, um einen Raum oder Gegenstand in gutem Zustand
-                                zu halten. Diese Aufgaben werden in der Regel täglich oder wöchentlich erledigt und umfassen
-                                das Reinigen von Oberflächen, Staubwischen sowie das Wischen oder Staubsaugen von Böden.
-                            </p>
-                            <Link :href="route('blog')" class="text-info icon-move-right">
-                            Weiterlesen
-                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-lg-0 mt-4">
-                    <div class="info-horizontal bg-gray-100 border-radius-xl p-5">
-                        <div class="description">
-                            <h5>Gebäudereinigung – Was gehört dazu?</h5>
-                            <p>
-                                Unter Gebäudereinigung versteht man die Reinigung und Pflege der Innen- und Außenräume eines
-                                Gebäudes. Diese Art der Reinigung kann je nach den Bedürfnissen des Gebäudes und seiner
-                                Bewohner ein breites Spektrum an Aufgaben umfassen.
-                            </p>
-                            <Link :href="route('blog')" class=" text-info icon-move-right">
-                            Weiterlesen
-                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                            </Link>
-                        </div>
-                    </div>
+                <div class="container">
+                    <details class="faq-card">
+                        <summary>How much does your cleaning service cost? <span class="faq-open-icon">+</span>
+                        </summary>
+                        <span class="faq-card-spoiler">Our pricing depends on various factors such as the size of the space,
+                            the type of cleaning required, and the frequency of service. We offer customized quotes based on
+                            individual needs. Please contact us for a free estimate.</span>
+                    </details>
+                    <details class="faq-card">
+                        <summary>Can I schedule cleaning services on weekends or evenings? <span
+                                class="faq-open-icon">+</span></summary>
+                        <span class="faq-card-spoiler">Yes, we understand that everyone's schedule is different. We offer
+                            flexible scheduling options, including weekends and evenings, to accommodate your needs. Just
+                            let us know your preferred time, and we will do our best to accommodate your request.</span>
+                    </details>
+                    <details class="faq-card">
+                        <summary>Are your cleaners background checked and insured? <span class="faq-open-icon">+</span>
+                        </summary>
+                        <span class="faq-card-spoiler">Yes, all our cleaners undergo thorough background checks and are
+                            insured for your peace of mind. We prioritize the safety and security of our clients and ensure
+                            that our team members are trustworthy and reliable.</span>
+                    </details>
+                    <details class="faq-card">
+                        <summary>Do I need to provide cleaning supplies and equipment? <span class="faq-open-icon">+</span>
+                        </summary>
+                        <span class="faq-card-spoiler">No, we bring our own professional-grade cleaning supplies and
+                            equipment. Our team is equipped with everything needed to ensure a thorough and efficient
+                            cleaning process. However, if you have any specific preferences or requirements, feel free to
+                            let us know.</span>
+                    </details>
+                    <details class="faq-card">
+                        <summary>What areas do you serve? <span class="faq-open-icon">+</span></summary>
+                        <span class="faq-card-spoiler">We provide cleaning services in [City/Region]. Our coverage area
+                            includes residential and commercial properties within a [radius/mileage] distance. If you're
+                            unsure whether we serve your location, please reach out to us for confirmation.</span>
+                    </details>
                 </div>
             </div>
         </div>
+
     </section>
 
     <Footer :name="company.name" />
