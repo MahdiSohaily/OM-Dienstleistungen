@@ -12,8 +12,14 @@ class websiteController extends Controller
     {
         $company_info = DB::table('company')->first();
         $main_page = DB::table('main_page')->first();
-
-        return Inertia::render('Home', ['company' => $company_info, 'main_page' => $main_page]);
+        $services = DB::table('services')->get();
+        $faqs = DB::table('faqs')->get();
+        return Inertia::render('Home', [
+            'company' => $company_info,
+            'main_page' => $main_page,
+            'services' => $services,
+            'faqs' => $faqs,
+        ]);
     }
 
     public function about()

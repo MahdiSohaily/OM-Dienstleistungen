@@ -7,7 +7,9 @@ import { onMounted } from 'vue';
 
 const props = defineProps({
     'company': Object,
-    'main_page': Object
+    'main_page': Object,
+    'services': Array,
+    'faqs': Array,
 })
 
 const split = (data) => {
@@ -52,47 +54,12 @@ onMounted(() => {
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row justify-content-start">
-                        <div class="col-md-6">
+                        <div v-for="service of services" class="col-md-6">
                             <div class="info">
-                                <h5 class="font-weight-bolder mt-3">Glas- und Gebäudereinigung</h5>
+                                <h5 class="font-weight-bolder mt-3">{{ service.title }}</h5>
                                 <p class="pe-5">
-                                    Glas- und Gebäudereinigungsdienste sind für jedes Unternehmen, das ein sauberes,
-                                    professionelles Image bewahren möchte, unerlässlich. Bei diesen Dienstleistungen handelt
-                                    es sich um die Reinigung der Außen- und Innenflächen eines Gebäudes, einschließlich der
-                                    Fenster, Fassaden, Wände und Dächer.
+                                    {{ service.intro_text }}
                                 </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="info">
-                                <h5 class="font-weight-bolder mt-3">Abbrucharbeiten</h5>
-                                <p class="pe-3">
-                                    Bei Abbrucharbeiten handelt es sich um den Abriss oder die Entfernung von Bauwerken wie
-                                    Gebäuden oder Brücken. Diese Dienstleistungen werden häufig von Unternehmen in Anspruch
-                                    genommen, die alte oder veraltete Gebäude räumen müssen, um Platz für Neubauten oder
-                                    Renovierungen zu schaffen.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-start mt-3">
-                        <div class="col-md-6 mt-3">
-                            <div class="info">
-                                <h5 class="font-weight-bolder mt-3">Entrümpelung</h5>
-                                <p class="pe-5">Unter Räumungsdiensten versteht man das Entfernen unerwünschter Gegenstände,
-                                    Abfälle oder Materialien aus einem Grundstück oder Raum. Dieser Service wird
-                                    typischerweise von Unternehmen in Anspruch genommen, die eine Fläche für Neubauten oder
-                                    Renovierungen räumen müssen, oder von Unternehmen, die an einen neuen Standort umziehen
-                                    und unerwünschte Gegenstände entsorgen müssen.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="info">
-                                <h5 class="font-weight-bolder mt-3">Müllentsorgung</h5>
-                                <p class="pe-3">Abfallentsorgungsdienste umfassen den Prozess des Sammelns, Transports und
-                                    Entsorgens von Abfallmaterialien von einem Unternehmens- oder Industriestandort. Dieser
-                                    Service wird typischerweise von Unternehmen in Anspruch genommen, die eine große Menge
-                                    Abfall erzeugen und eine sichere und effiziente Möglichkeit zur Entsorgung benötigen</p>
                             </div>
                         </div>
                     </div>
@@ -143,8 +110,6 @@ onMounted(() => {
         <div class="container">
             <div class="row">
                 <div class="bg-gradient-dark position-relative border-radius-xl">
-                    <img :src="'../assets/img/shapes/waves-white.svg'" alt="pattern-lines"
-                        class="position-absolute start-0 top-md-0 w-100 opacity-6">
                     <div class="container py-md-7 py-3 postion-relative z-index-2">
                         <div class="row">
                             <div class="col-md-5 col-12 ">
@@ -174,9 +139,8 @@ onMounted(() => {
             <div class="row">
                 <div class="row justify-content-center text-center my-sm-5">
                     <div class="col-lg-6">
-                        <h2 class="text-dark mb-0">Frequently asked questions</h2>
-                        <p class="faq-aftertext">If you cannot find answer to your question in our FAQ, you can always<br>
-                            contact us. We will answer shortly!
+                        <h2 class="text-dark mb-0">{{main_page.faq_title}}</h2>
+                        <p class="faq-aftertext">{{main_page.faq_title_desc}}
                         </p>
                         <Link :href="route('contact')" target="blank" rel="nofollow" class="text-info icon-move-right">
                         Erkunde mehr
@@ -190,40 +154,12 @@ onMounted(() => {
 
             <div class="row">
                 <div class="container">
-                    <details class="faq-card">
-                        <summary>How much does your cleaning service cost? <span class="faq-open-icon">+</span>
+                    <details v-for="faq of faqs" class="faq-card">
+                        <summary>{{ faq.question}} <span class="faq-open-icon">+</span>
                         </summary>
-                        <span class="faq-card-spoiler">Our pricing depends on various factors such as the size of the space,
-                            the type of cleaning required, and the frequency of service. We offer customized quotes based on
-                            individual needs. Please contact us for a free estimate.</span>
-                    </details>
-                    <details class="faq-card">
-                        <summary>Can I schedule cleaning services on weekends or evenings? <span
-                                class="faq-open-icon">+</span></summary>
-                        <span class="faq-card-spoiler">Yes, we understand that everyone's schedule is different. We offer
-                            flexible scheduling options, including weekends and evenings, to accommodate your needs. Just
-                            let us know your preferred time, and we will do our best to accommodate your request.</span>
-                    </details>
-                    <details class="faq-card">
-                        <summary>Are your cleaners background checked and insured? <span class="faq-open-icon">+</span>
-                        </summary>
-                        <span class="faq-card-spoiler">Yes, all our cleaners undergo thorough background checks and are
-                            insured for your peace of mind. We prioritize the safety and security of our clients and ensure
-                            that our team members are trustworthy and reliable.</span>
-                    </details>
-                    <details class="faq-card">
-                        <summary>Do I need to provide cleaning supplies and equipment? <span class="faq-open-icon">+</span>
-                        </summary>
-                        <span class="faq-card-spoiler">No, we bring our own professional-grade cleaning supplies and
-                            equipment. Our team is equipped with everything needed to ensure a thorough and efficient
-                            cleaning process. However, if you have any specific preferences or requirements, feel free to
-                            let us know.</span>
-                    </details>
-                    <details class="faq-card">
-                        <summary>What areas do you serve? <span class="faq-open-icon">+</span></summary>
-                        <span class="faq-card-spoiler">We provide cleaning services in [City/Region]. Our coverage area
-                            includes residential and commercial properties within a [radius/mileage] distance. If you're
-                            unsure whether we serve your location, please reach out to us for confirmation.</span>
+                        <span class="faq-card-spoiler">
+                            {{ faq.answer }}
+                        </span>
                     </details>
                 </div>
             </div>
