@@ -33,12 +33,12 @@ const props = defineProps({
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" :href="route('contact')">
-                Kontaktiere uns
+                Kontaktiere
               </a>
             </li>
           </ul>
           <p class="text-sm text-white mb-0">
-            Urheberrechte © 2023 von OM-Dienstleistungen.
+            Urheberrechte © 2023 von O&M Dienstleistungen.
           </p>
         </div>
         <div class="col-lg-6 ms-auto text-center ">
