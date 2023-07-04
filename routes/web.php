@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AboutPageController;
-use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MainPageController;
@@ -29,6 +28,7 @@ Route::controller(websiteController::class)->group(function () {
     Route::get('/blog/{id}', 'post')->name('post');
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/policy', 'policy')->name('policy');
+    Route::get('/privicy', 'privicy')->name('privicy');
 });
 
 
@@ -41,6 +41,7 @@ Route::middleware([
 
     Route::controller(DashboardController::class)->group(function () {
         Route::get('/dashboard', 'index')->name('dashboard');
+        Route::post('/dashboard', 'storeHeader')->name('dashboard.storeHeader');
     });
 
     Route::controller(MainPageController::class)->group(function () {
@@ -53,7 +54,7 @@ Route::middleware([
 
     Route::controller(AboutPageController::class)->group(function () {
         Route::get('/aboutPage', 'index')->name('about.show');
-        Route::post('/main', 'storeHeader')->name('about.storeHeader');
+        Route::post('/main/header', 'storeHeader')->name('about.storeHeader');
         Route::post('/main/about', 'storeAbout')->name('about.storeAbout');
         Route::post('/main/catelog', 'storeCatelog')->name('about.storeCatelog');
     });
@@ -63,6 +64,13 @@ Route::middleware([
         Route::post('/servicesPage', 'storeHeader')->name('services.storeHeader');
         Route::post('/servicesPage/update', 'update')->name('services.update');
     });
+
+    // Route::controller(BlogPageController::class)->group(function () {
+    //     Route::get('/blogPage', 'index')->name('blog.show');
+    //     Route::get('/blogPage/{id}', 'edit')->name('blog.edit');
+    //     Route::post('/blogPage/store', 'store')->name('blog.store');
+    //     Route::post('/blogPage/update', 'update')->name('blog.update');
+    // });
 
     Route::controller(ContactPageController::class)->group(function () {
         Route::get('/contactPage', 'index')->name('contact.show');

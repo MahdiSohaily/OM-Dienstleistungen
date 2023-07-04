@@ -1,9 +1,6 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import DeleteUserForm from '@/Pages/Profile/Partials/DeleteUserForm.vue';
-import LogoutOtherBrowserSessionsForm from '@/Pages/Profile/Partials/LogoutOtherBrowserSessionsForm.vue';
-import SectionBorder from '@/Components/SectionBorder.vue';
-import TwoFactorAuthenticationForm from '@/Pages/Profile/Partials/TwoFactorAuthenticationForm.vue';
 import UpdatePasswordForm from '@/Pages/Profile/Partials/UpdatePasswordForm.vue';
 import UpdateProfileInformationForm from '@/Pages/Profile/Partials/UpdateProfileInformationForm.vue';
 
@@ -14,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-    <AppLayout title="Profile">
+    <AppLayout title="Profile" name="OM Dienstleistungen">
         <div class="container-fluid">
             <div class="page-header min-height-300 border-radius-xl mt-4"
                 style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
@@ -37,7 +34,7 @@ defineProps({
         </div>
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-xl-4 mb-4">
                     <div class="card h-100">
                         <div class="card-header pb-0 p-3">
                             <h6 class="mb-0">Update Information</h6>
@@ -47,23 +44,23 @@ defineProps({
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-xl-4  mb-4">
                     <div class="card h-100">
                         <div class="card-header pb-0 p-3">
                             <h6 class="mb-0">Update Password</h6>
                         </div>
                         <div class="card-body p-3">
-                            <UpdatePasswordForm  />
+                            <UpdatePasswordForm />
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-xl-4  mb-4">
                     <div class="card h-100">
                         <div class="card-header pb-0 p-3">
                             <h6 class="mb-0">Delete Account</h6>
                         </div>
                         <div class="card-body p-3">
-                            <DeleteUserForm  />
+                            <DeleteUserForm />
                         </div>
                     </div>
                 </div>

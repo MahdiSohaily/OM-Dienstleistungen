@@ -11,7 +11,7 @@ const props = defineProps({
 
 </script>
 <template>
-    <AppLayout title="Contact">
+    <AppLayout title="Contact" :name="props.company.name">
 
         <Head title="Kontaktiere uns" />
         <HeaderSection :page="contact_page" />

@@ -19,7 +19,7 @@ const props = defineProps({
                                 <p class="lead mb-4 text-white opacity-8">
                                     {{ title_desc }}
                                 </p>
-                                <a :href="'mailto:' + mail_to" type="submit" class="btn bg-white text-dark">{{
+                                <!-- <a :href="'mailto:' + mail_to" type="submit" class="btn bg-white text-dark">{{
                                     mail_to_title }}</a>
                                 <h6 class="text-white mb-2 mt-5">{{ social_title }}</h6>
                                 <div class="d-flex justify-content-center">
@@ -27,7 +27,7 @@ const props = defineProps({
                                     <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
                                     <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
                                     <a href="javascript:;"><i class="fab fa-linkedin text-lg text-white"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
             </div>
