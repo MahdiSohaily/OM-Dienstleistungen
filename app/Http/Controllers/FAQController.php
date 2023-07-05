@@ -25,7 +25,7 @@ class FAQController extends Controller
         $company_info = DB::table('company')->first();
         $faq = DB::table('faqs')->where('id', $id)->first();
 
-        return Inertia::render('FAQ/Show', [
+        return Inertia::render('FAQ/partials/faq', [
             'company' => $company_info,
             'faq' => $faq
         ]);
