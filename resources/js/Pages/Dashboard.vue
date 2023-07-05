@@ -108,7 +108,7 @@ const updateData = () => {
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="d-flex flex-column h-100">
-                                        <h5 class="font-weight-bolder">Company Information</h5>
+                                        <h5 class="font-weight-bolder">Edit Company Information</h5>
                                         <FormSection @submitted="updateData">
                                             <template #description>
                                                 Fill out the following form to update the company Information
@@ -193,8 +193,31 @@ const updateData = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    
+                <div class="col-md-6 mb-lg-0 mb-4">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <h5 class="font-weight-bolder">Company Information</h5>
+                                        <p class="mb-5">From colors, cards, typography to complex elements, you will find
+                                            the full documentation.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
+                                    <div class=" border-radius-lg h-100">
+                                        <img :src="'./assets/img/shapes/waves-white.svg'"
+                                            class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
+                                        <div
+                                            class="position-relative d-flex align-items-center justify-content-center h-100">
+                                            <img class="w-100 position-relative z-index-2 pt-4"
+                                                :src="'./assets/img/logo.png'" alt="rocket">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
