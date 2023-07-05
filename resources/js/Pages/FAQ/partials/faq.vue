@@ -20,7 +20,7 @@ const form = useForm({
 });
 
 const updateData = () => {
-    form.post(route('about.storeHeader'), {
+    form.post(route('faq.updateFAQ'), {
         preserveScroll: true,
         onSuccess: () => { },
     });

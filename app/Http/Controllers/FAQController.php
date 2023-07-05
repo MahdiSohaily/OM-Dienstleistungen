@@ -30,4 +30,18 @@ class FAQController extends Controller
             'faq' => $faq
         ]);
     }
+
+    function updateFAQ(Request $request)
+    {
+        $id = $request->input('id');
+        $question = $request->input('question');
+        $answer = $request->input('answer');
+
+        DB::table('faqs')
+            ->where('id', $id)
+            ->update([
+                'question' => $question,
+                'answer' => $answer,
+            ]);
+    }
 }

@@ -68,6 +68,7 @@ Route::middleware([
     Route::controller(FAQController::class)->group(function () {
         Route::get('/faqPage', 'index')->name('faq.show');
         Route::get('/faqPage/update/{id}', 'update')->name('faq.update');
+        Route::post('/faqPage/update', 'updateFAQ')->name('faq.updateFAQ');
     });
 
     Route::controller(ContactPageController::class)->group(function () {
