@@ -122,7 +122,7 @@ function toggleSidenav() {
                         </Link>
                     </li>
                     <li class="nav-item">
-                        <Link class="nav-link " :class="title == 'About' ? 'active' : ''" :href="route('about.show')">
+                        <Link class="nav-link " :class="title == 'FAQ' ? 'active' : ''" :href="route('faq.show')">
                         <div
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1"
