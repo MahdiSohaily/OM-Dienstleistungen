@@ -32,7 +32,7 @@ const props = defineProps({
     </div>
     <div class="container-fluid py-4">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-md-8 mx-auto">
                 <div class="card h-100">
                     <div class="card-header pb-0 p-3">
                         <h4 class="mb-0">Angaben gemäß § 5 TMG</h4>
@@ -90,8 +90,4 @@ Deutschland
     <Footer :name="company.name" />
 </template>
 <style>
-p {
-    white-space: nowrap !important;
-    word-wrap: none !important;
-}
 </style>

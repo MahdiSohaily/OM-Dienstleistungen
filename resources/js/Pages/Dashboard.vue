@@ -200,12 +200,12 @@ const updateData = () => {
                                 <div class="col-lg-6">
                                     <div class="d-flex flex-column h-100">
                                         <h5 class="font-weight-bolder">Company Information</h5>
-                                        <div class="card h-100">
+                                        <div class=" h-100">
                                             <div class="card-body p-3">
                                                 <div class="timeline timeline-one-side">
                                                     <div class="timeline-block mb-3">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-bell-55 text-success text-gradient"></i>
+                                                            <i class="ni ni-app text-success text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">
@@ -216,7 +216,7 @@ const updateData = () => {
                                                     </div>
                                                     <div class="timeline-block mb-3">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-html5 text-danger text-gradient"></i>
+                                                            <i class="ni ni-pin-3 text-danger text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">Company
@@ -227,7 +227,7 @@ const updateData = () => {
                                                     </div>
                                                     <div class="timeline-block mb-3">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-cart text-info text-gradient"></i>
+                                                            <i class="ni ni-calendar-grid-58 text-info text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">Stablish
@@ -238,7 +238,7 @@ const updateData = () => {
                                                     </div>
                                                     <div class="timeline-block mb-3">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-credit-card text-warning text-gradient"></i>
+                                                            <i class="ni ni-world-2 text-warning text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">Company Info
@@ -249,7 +249,7 @@ const updateData = () => {
                                                     </div>
                                                     <div class="timeline-block mb-3">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-key-25 text-primary text-gradient"></i>
+                                                            <i class="ni ni-email-83 text-primary text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">Email
@@ -260,7 +260,7 @@ const updateData = () => {
                                                     </div>
                                                     <div class="timeline-block">
                                                         <span class="timeline-step">
-                                                            <i class="ni ni-money-coins text-dark text-gradient"></i>
+                                                            <i class="ni ni-mobile-button text-dark text-gradient"></i>
                                                         </span>
                                                         <div class="timeline-content">
                                                             <h6 class="text-dark text-sm font-weight-bold mb-0">Phone Number
@@ -281,7 +281,7 @@ const updateData = () => {
                                         <img :src="'./assets/img/shapes/waves-white.svg'"
                                             class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
                                         <div
-                                            class="position-relative d-flex align-items-center justify-content-center h-100">
+                                            class="md:hidden position-relative d-flex align-items-center justify-content-center h-100">
                                             <img class="w-100 position-relative z-index-2 pt-4"
                                                 :src="'./assets/img/logo.png'" alt="rocket">
                                         </div>
