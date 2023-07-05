@@ -5,13 +5,11 @@ import Footer from '../../Layouts/Footer.vue';
 
 const props = defineProps({
     company: Object,
-    blog_page: Object,
-    posts: Array
 });
 
 </script>
 <template>
-    <Head title="Blog" />
+    <Head title="Datenschutzerklärung" />
     <Navbar :company="company" />
     <div class="container-fluid">
         <div class="page-header min-height-300 border-radius-xl mt-4"

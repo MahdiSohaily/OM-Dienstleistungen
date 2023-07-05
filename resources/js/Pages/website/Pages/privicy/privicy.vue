@@ -5,13 +5,11 @@ import Footer from '../../Layouts/Footer.vue';
 
 const props = defineProps({
     company: Object,
-    blog_page: Object,
-    posts: Array
 });
 
 </script>
 <template>
-    <Head title="Blog" />
+    <Head title="Impressum" />
     <Navbar :company="company" />
     <div class="container-fluid">
         <div class="page-header min-height-300 border-radius-xl mt-4"
@@ -81,7 +79,8 @@ Deutschland
                             Unsere E-Mail-Adresse finden Sie oben im Impressum.
                         </p>
                         <h4>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h4>
-                        <p>Verbraucherstreitbeilegung/Universalschlichtungsstelle Verbraucherschlichtungsstelle teilzunehmen.</p>
+                        <p>Verbraucherstreitbeilegung/Universalschlichtungsstelle Verbraucherschlichtungsstelle
+                            teilzunehmen.</p>
                     </div>
                 </div>
             </div>
@@ -89,5 +88,4 @@ Deutschland
     </div>
     <Footer :name="company.name" />
 </template>
-<style>
-</style>
+<style></style>
