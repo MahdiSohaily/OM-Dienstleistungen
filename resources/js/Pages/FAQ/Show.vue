@@ -12,9 +12,7 @@ const props = defineProps({
 </script>
 <template>
     <AppLayout title="FAQ" :name="props.company.name">
-
         <Head title="FAQ" />
-
     </AppLayout>
 </template>
 <style></style>
