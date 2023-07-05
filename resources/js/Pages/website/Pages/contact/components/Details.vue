@@ -18,10 +18,11 @@ const props = defineProps({
                             <div class="text-center">
                                 <h3 class="text-gradient text-info">{{ page.form_title }}</h3>
                                 <p class="mb-0">
-                                   {{ page.form_desc }}
+                                    {{ page.form_desc }}
                                 </p>
                             </div>
-                            <form action="https://formspree.io/f/xlekqzwk" id="contact-form" method="post" autocomplete="off">
+                            <form action="https://formspree.io/f/xlekqzwk" id="contact-form" method="post"
+                                autocomplete="off">
                                 <div class="card-body pb-2">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -61,33 +62,24 @@ const props = defineProps({
     </header>
     <section class="py-sm-7">
         <div class="container">
-            <div class="bg-gradient-INFO position-relative m-3 border-radius-xl overflow-hidden">
-                <div class="container py-md-7 py-3 postion-relative z-index-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 p-3">
-                                <div class="row">
-                                    <div class="row justify-content-center text-center my-sm-5">
-                                        <div class="col-12">
-                                            <h2 class="text-dark mb-0">{{ page.map_title }}</h2>
-                                            <p>
-                                                {{ page.map_desc }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 my-auto">
-                                <iframe class="col-12 rounded-3"
-                                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1762.9567003611794!2d7.020462608587375!3d50.684113476404505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDQxJzA1LjMiTiA3wrAwMScxMy40IkU!5e0!3m2!1sen!2s!4v1688476850909!5m2!1sen!2sus"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade">
-                                </iframe>
-                            </div>
-
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="row justify-content-center text-center my-sm-5">
+                        <div class="col-12">
+                            <h2 class="text-dark mb-0">{{ page.map_title }}</h2>
+                            <p>
+                                {{ page.map_desc }}
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 my-auto">
+                <iframe class="col-12 rounded-3"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1762.9567003611794!2d7.020462608587375!3d50.684113476404505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDQxJzA1LjMiTiA3wrAwMScxMy40IkU!5e0!3m2!1sen!2s!4v1688476850909!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>
