@@ -65,13 +65,6 @@ Route::middleware([
         Route::post('/servicesPage/update', 'update')->name('services.update');
     });
 
-    // Route::controller(BlogPageController::class)->group(function () {
-    //     Route::get('/blogPage', 'index')->name('blog.show');
-    //     Route::get('/blogPage/{id}', 'edit')->name('blog.edit');
-    //     Route::post('/blogPage/store', 'store')->name('blog.store');
-    //     Route::post('/blogPage/update', 'update')->name('blog.update');
-    // });
-
     Route::controller(ContactPageController::class)->group(function () {
         Route::get('/contactPage', 'index')->name('contact.show');
         Route::post('/contactPage', 'storeHeader')->name('contact.storeHeader');

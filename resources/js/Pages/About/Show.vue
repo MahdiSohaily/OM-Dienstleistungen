@@ -3,7 +3,6 @@ import { Head } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import HeaderSection from './partials/HeaderSection.vue';
 import AboutSection from './partials/AboutSection.vue';
-import FAQ from './partials/FAQ.vue';
 
 
 const props = defineProps({
@@ -22,9 +21,6 @@ const props = defineProps({
         <!-- Section with four info areas left & one card right with image and waves -->
         <AboutSection :page="about_page" />
         <!-- END Section with four info areas left & one card right with image and waves -->
-        <!-- <FAQ :page="about_page" /> -->
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolore omnis atque iusto quo ullam quasi! Fugit
-        debitis, impedit in soluta a corporis dolore quos, quasi vero quia, non eum?
     </AppLayout>
 </template>
 <style></style>
