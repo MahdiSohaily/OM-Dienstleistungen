@@ -102,7 +102,7 @@ const updateData = () => {
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-12">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
@@ -192,6 +192,9 @@ const updateData = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    
                 </div>
             </div>
         </div>
