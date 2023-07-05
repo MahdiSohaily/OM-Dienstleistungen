@@ -35,7 +35,7 @@ const updateData = () => {
                         <div class="col-md-8">
                             <h6 class="mb-0">Question</h6>
                             <p class="text-sm">
-                                {{ faq.question }}
+                                {{ form.question }}
                             </p>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const updateData = () => {
                 <div class="card-body p-3">
                     <h6 class="mb-0">Answer</h6>
                     <p class="text-sm">
-                        {{ faq.answer }}
+                        {{ form.answer }}
                     </p>
                 </div>
             </div>
@@ -60,16 +60,14 @@ const updateData = () => {
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
                             <label for="question">Question</label>
-                            <TextInput id="question" v-model="form.question" type="text" class="mt-1 block w-full"
-                                autocomplete="question" />
-                            <InputError :message="form.errors.question" class="mt-2" />
+                            <textarea name="question" aria-describedby="addon-right addon-left" rows="5"
+                                class="form-control" v-model="form.question">{{ form.question }}</textarea>
                         </div>
                         <!-- Name -->
                         <div class="col-span-6 sm:col-span-4">
                             <label for="answer">Answer</label>
-                            <TextInput id="answer" v-model="form.answer" type="text" class="mt-1 block w-full"
-                                autocomplete="answer" />
-                            <InputError :message="form.errors.answer" class="mt-2" />
+                            <textarea name="answer" aria-describedby="addon-right addon-left" rows="5" class="form-control"
+                                v-model="form.answer">{{ form.answer }}</textarea>
                         </div>
                     </template>
 
