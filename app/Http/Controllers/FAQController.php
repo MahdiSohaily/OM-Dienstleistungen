@@ -13,7 +13,6 @@ class FAQController extends Controller
     {
         $company_info = DB::table('company')->first();
         $faqs = DB::table('faqs')->get();
-
         return Inertia::render('FAQ/Show', [
             'company' => $company_info,
             'faqs' => $faqs
@@ -24,11 +23,16 @@ class FAQController extends Controller
     {
         $company_info = DB::table('company')->first();
         $faq = DB::table('faqs')->where('id', $id)->first();
-
-        return Inertia::render('FAQ/partials/faq', [
-            'company' => $company_info,
-            'faq' => $faq
-        ]);
+        if ($faq) {
+            return Inertia::render('FAQ/partials/faq', [
+                'company' => $company_info,
+                'faq' => $faq
+            ]);
+        } else {
+            return Inertia::render('FAQ/partials/404', [
+                'company' => $company_info
+            ]);
+        }
     }
 
     function updateFAQ(Request $request)
