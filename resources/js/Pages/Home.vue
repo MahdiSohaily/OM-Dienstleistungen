@@ -116,7 +116,7 @@ onMounted(() => {
                                 <img class="w-100 border-radius-lg shadow-lg" :src="'../assets/img/curved-images/about.jpg'"
                                     alt="Product Image">
                             </div>
-                            <div class="col-md-7 col-12 ps-5">
+                            <div class="col-md-7 col-12 ps-md-5 mt-3 mt-md-0">
                                 <h3 class="text-gradient text-info">{{ company.name }}</h3>
                                 <p v-for="item of split(main_page.mini_description)" class="pe-md-5 text-white">
                                     {{ item }}
@@ -139,8 +139,8 @@ onMounted(() => {
             <div class="row">
                 <div class="row justify-content-center text-center my-sm-5">
                     <div class="col-lg-6">
-                        <h2 class="text-dark mb-0">{{main_page.faq_title}}</h2>
-                        <p class="faq-aftertext">{{main_page.faq_title_desc}}
+                        <h2 class="text-dark mb-0">{{ main_page.faq_title }}</h2>
+                        <p class="faq-aftertext">{{ main_page.faq_title_desc }}
                         </p>
                         <Link :href="route('contact')" target="blank" rel="nofollow" class="text-info icon-move-right">
                         Erkunde mehr
@@ -155,7 +155,7 @@ onMounted(() => {
             <div class="row">
                 <div class="container">
                     <details v-for="faq of faqs" class="faq-card">
-                        <summary>{{ faq.question}} <span class="faq-open-icon">+</span>
+                        <summary>{{ faq.question }} <span class="faq-open-icon">+</span>
                         </summary>
                         <span class="faq-card-spoiler">
                             {{ faq.answer }}
