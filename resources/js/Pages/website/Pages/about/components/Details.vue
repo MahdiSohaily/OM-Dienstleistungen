@@ -41,7 +41,7 @@ const props = defineProps({
         <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
           <div class="card shadow-lg">
             <div class="card-header p-0 mx-3 my-3 position-relative z-index-1">
-              <img :src="page.about_photo" alt="img-blur-shadow" class="img-fluid rounded-3">
+              <img :src="'./assets/img/logo.png'" alt="img-blur-shadow" class="img-fluid rounded-3">
             </div>
           </div>
         </div>
