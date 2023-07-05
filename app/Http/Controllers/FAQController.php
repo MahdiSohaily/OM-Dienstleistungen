@@ -12,12 +12,11 @@ class FAQController extends Controller
     function index()
     {
         $company_info = DB::table('company')->first();
-        $about_page = DB::table('about_page')->first();
-        $social_media = DB::table('social_media')->first();
+        $faqs = DB::table('faqs')->get();
+
         return Inertia::render('FAQ/Show', [
             'company' => $company_info,
-            'about_page' => $about_page,
-            'social_media' => $social_media,
+            'faqs' => $faqs
         ]);
     }
 }
