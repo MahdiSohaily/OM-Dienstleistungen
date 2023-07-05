@@ -14,8 +14,7 @@ const props = defineProps({
     <AppLayout title="FAQ" :name="props.company.name">
 
         <Head title="FAQ" />
-        <!-- -------- START HEADER 7 w/ text and video ------- -->
-       
+
     </AppLayout>
 </template>
 <style></style>
