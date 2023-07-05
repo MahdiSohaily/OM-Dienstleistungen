@@ -42,9 +42,7 @@ const split = (data) => {
                     </p>
                 </div>
                 <div class="col-md-5 col-12 my-auto">
-                    <a href="https://www.creative-tim.com/product/soft-ui-design-system-pro">
-                        <img class="w-100 border-radius-lg shadow-lg" :src="service.photo_path" alt="Product Image">
-                    </a>
+                    <img class="w-100 border-radius-lg shadow-lg" :src="service.photo_path" alt="Product Image">
                 </div>
             </div>
         </div>
@@ -53,9 +51,7 @@ const split = (data) => {
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-12 my-auto">
-                    <a href="https://www.creative-tim.com/product/soft-ui-design-system-pro">
-                        <img class="w-100 border-radius-lg shadow-lg" :src="service.photo_path" alt="Product Image">
-                    </a>
+                    <img class="w-100 border-radius-lg shadow-lg" :src="service.photo_path" alt="Product Image">
                 </div>
                 <div class="col-md-7 col-12 my-auto pb-5">
                     <h3 class="text-gradient text-info mb-0">{{ form.title }}</h3>
