@@ -31,21 +31,17 @@ const props = defineProps({
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Answer
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Operation</th>
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Operation</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <div class="d-flex px-2 py-1">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <h6 class="mb-0 text-sm">John Michael</h6>
-                                                <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                                            </div>
-                                        </div>
+                                        <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
                                     </td>
                                     <td>
-                                        <p class="text-xs font-weight-bold mb-0">Manager</p>
                                         <p class="text-xs text-secondary mb-0">Organization</p>
                                     </td>
                                     <td>
