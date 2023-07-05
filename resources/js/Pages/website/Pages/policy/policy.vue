@@ -32,7 +32,7 @@ const props = defineProps({
     </div>
     <div class="container-fluid py-4">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-md-8 mx-auto">
                 <div class="card h-100">
                     <div class="card-header pb-0 p-3">
                         <h4 class="mb-0">1. Datenschutz auf einen Blick</h4>
@@ -641,15 +641,6 @@ Am Tonschuppen 2
                             Geschäftsbeziehung und Ablauf der ggf. bestehenden gesetzlichen Aufbewahrungsfristen gelöscht.
                             Gesetzliche Aufbewahrungsfristen bleiben unberührt.
                         </p>
-
-
-
-
-                        <a href="#">33</a>
-
-
-
-
                     </div>
                 </div>
             </div>

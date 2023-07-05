@@ -13,7 +13,12 @@ class MainPageController extends Controller
     {
         $company_info = DB::table('company')->first();
         $main_page = DB::table('main_page')->first();
-        return Inertia::render('Main/Show', ['company' => $company_info, 'main_page' => $main_page]);
+        $faqs = DB::table('faqs')->get();
+        return Inertia::render('Main/Show', [
+            'company' => $company_info,
+            'main_page' => $main_page,
+            'faqs' => $faqs
+        ]);
     }
 
     function storeHeader(Request $request)
@@ -58,16 +63,16 @@ class MainPageController extends Controller
             ]);
     }
 
-    function storeBlog(Request $request)
+    function storefaqs(Request $request)
     {
-        $blog_title = $request->input('blog_title');
-        $blog_title_desc = $request->input('blog_title_desc');
+        $faqs_title = $request->input('faqs_title');
+        $faqs_title_desc = $request->input('faqs_title_desc');
 
         DB::table('main_page')
             ->where('id', 1)
             ->update([
-                'blog_title' => $blog_title,
-                'blog_title_desc' => $blog_title_desc,
+                'faq_title' => $faqs_title,
+                'faq_title_desc' => $faqs_title_desc,
             ]);
     }
 }

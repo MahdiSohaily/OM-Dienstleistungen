@@ -39,12 +39,14 @@ class ServicePageController extends Controller
     {
         $id = $request->input('id');
         $title = $request->input('title');
+        $intro_text = $request->input('intro_text');
         $content = $request->input('content');
 
         DB::table('services')
             ->where('id', $id)
             ->update([
                 'title' => $title,
+                'intro_text' => $intro_text,
                 'content' => $content,
             ]);
     }

@@ -102,13 +102,13 @@ const updateData = () => {
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-12">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-body p-3">
                             <div class="row">
                                 <div class="col-lg-8">
                                     <div class="d-flex flex-column h-100">
-                                        <h5 class="font-weight-bolder">Company Information</h5>
+                                        <h5 class="font-weight-bolder">Edit Company Information</h5>
                                         <FormSection @submitted="updateData">
                                             <template #description>
                                                 Fill out the following form to update the company Information
@@ -187,6 +187,104 @@ const updateData = () => {
                                                 </PrimaryButton>
                                             </template>
                                         </FormSection>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-lg-0 mb-4">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-flex flex-column h-100">
+                                        <h5 class="font-weight-bolder">Company Information</h5>
+                                        <div class=" h-100">
+                                            <div class="card-body p-3">
+                                                <div class="timeline timeline-one-side">
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-app text-success text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">
+                                                                Company Name</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.name }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-pin-3 text-danger text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Company
+                                                                Address</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.address }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-calendar-grid-58 text-info text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Stablish
+                                                                Year</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.stablish_year }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-world-2 text-warning text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Company Info
+                                                            </h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.company_info }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-email-83 text-primary text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Email
+                                                                Address</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.email_address }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-mobile-button text-dark text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Phone Number
+                                                            </h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">{{
+                                                                form.phone }}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
+                                    <div class=" border-radius-lg h-100">
+                                        <img :src="'./assets/img/shapes/waves-white.svg'"
+                                            class="position-absolute h-100 w-50 top-0 d-lg-block d-none" alt="waves">
+                                        <div
+                                            class="md:hidden position-relative d-flex align-items-center justify-content-center h-100">
+                                            <img class="w-100 position-relative z-index-2 pt-4"
+                                                :src="'./assets/img/logo.png'" alt="rocket">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
