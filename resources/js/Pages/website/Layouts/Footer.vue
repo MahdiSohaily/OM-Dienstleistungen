@@ -33,7 +33,7 @@ const props = defineProps({
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" :href="route('contact')">
-                Kontaktiere
+                Kontakt
               </a>
             </li>
           </ul>
@@ -46,7 +46,8 @@ const props = defineProps({
             Der Lohn für das Betreten der Bühne ist Ruhm. Der Preis des Ruhms ist, dass man die Bühne nicht verlassen
             kann.
           </p>
-          <a href="javascript:;" target="_blank" class="text-white me-xl-4 me-4">
+          <a href="https://instagram.com/om_dienstleistungen?igshid=NTc4MTIwNjQ2YQ==" target="_blank"
+            class="text-white me-xl-4 me-4">
             <span class="fab fa-instagram" aria-hidden="true"></span>
             <span class="text-sm px-2">Follow us on instagram</span>
           </a>

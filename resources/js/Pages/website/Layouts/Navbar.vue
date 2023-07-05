@@ -52,7 +52,7 @@ const props = defineProps({
                                 <li class="nav-item">
                                     <Link class="nav-link nav-link-icon me-2" :href="route('contact')">
                                     <p class="d-inline text-sm z-index-1 font-weight-bold" title="Contact Us">
-                                        Kontaktiere
+                                        Kontakt
                                     </p>
                                     </Link>
                                 </li>
