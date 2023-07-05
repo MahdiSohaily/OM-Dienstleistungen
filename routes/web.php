@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\MainPageController;
 use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\websiteController;
@@ -63,6 +64,11 @@ Route::middleware([
         Route::get('/servicesPage', 'index')->name('services.show');
         Route::post('/servicesPage', 'storeHeader')->name('services.storeHeader');
         Route::post('/servicesPage/update', 'update')->name('services.update');
+    });
+    Route::controller(FAQController::class)->group(function () {
+        Route::get('/faqPage', 'index')->name('faq.show');
+        Route::post('/faqPage', 'storeHeader')->name('faq.storeHeader');
+        Route::post('/faqPage/update', 'update')->name('faq.update');
     });
 
     Route::controller(ContactPageController::class)->group(function () {
