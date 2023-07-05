@@ -38,13 +38,12 @@ const props = defineProps({
             </li>
           </ul>
           <p class="text-sm text-white mb-0">
-            Urheberrechte © 2023 von {{ name }}.
+            Copyrights © 2023 {{ name }}.
           </p>
         </div>
         <div class="col-lg-6 ms-auto text-center ">
           <p class="mb-5 text-md text-white font-weight-bold">
-            Der Lohn für das Betreten der Bühne ist Ruhm. Der Preis des Ruhms ist, dass man die Bühne nicht verlassen
-            kann.
+            Saubere Räume schaffen eine klare Perspektive und positive Energie.
           </p>
           <a href="https://instagram.com/om_dienstleistungen?igshid=NTc4MTIwNjQ2YQ==" target="_blank"
             class="text-white me-xl-4 me-4">

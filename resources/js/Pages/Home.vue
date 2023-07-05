@@ -43,7 +43,7 @@ onMounted(() => {
                         <h2 class="text-dark mb-0">{{ main_page.services_title }}</h2>
                         <p class="lead">{{ main_page.services_title_desc }}</p>
                         <Link :href="route('services')" target="blank" rel="nofollow" class="text-info icon-move-right">
-                        Erkunde mehr
+                        Mehr Info
                         <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                         </Link>
                     </div>
@@ -93,7 +93,7 @@ onMounted(() => {
                                     </g>
                                 </svg>
                             </div>
-                            <h2 class="text-white up mb-0">Spure die
+                            <h2 class="text-white up mb-0">Spüre die
                                 <br /> Qualität
                             </h2>
 
@@ -143,7 +143,7 @@ onMounted(() => {
                         <p class="faq-aftertext">{{ main_page.faq_title_desc }}
                         </p>
                         <Link :href="route('contact')" target="blank" rel="nofollow" class="text-info icon-move-right">
-                        Erkunde mehr
+                            Kontakiere uns
                         <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
                         </Link>
                     </div>
