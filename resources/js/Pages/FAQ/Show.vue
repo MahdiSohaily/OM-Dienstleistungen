@@ -1,5 +1,5 @@
 <script setup>
-import { Head } from '@inertiajs/vue3';
+import { Head, router } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 
 
@@ -37,8 +37,9 @@ const props = defineProps({
                                         <p class="text-xs text-secondary mb-0">{{ faq.question }}</p>
                                     </td>
                                     <td>
-                                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
-                                            data-toggle="tooltip" data-original-title="Edit user">
+                                        <a :href="route('faq.update', faq.id)"
+                                            class="text-secondary font-weight-bold text-xs" data-toggle="tooltip"
+                                            data-original-title="Edit user">
                                             Edit
                                         </a>
                                     </td>
