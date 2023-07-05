@@ -93,7 +93,7 @@ onMounted(() => {
                                     </g>
                                 </svg>
                             </div>
-                            <h2 class="text-white up mb-0">Spüre das
+                            <h2 class="text-white up mb-0">Spure die
                                 <br /> Qualität
                             </h2>
 
