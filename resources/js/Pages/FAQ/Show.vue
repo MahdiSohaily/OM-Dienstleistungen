@@ -5,8 +5,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 
 const props = defineProps({
     company: Object,
-    about_page: Object,
-    social_media: Object,
+    faqs: Array,
 });
 
 </script>
