@@ -200,9 +200,81 @@ const updateData = () => {
                                 <div class="col-lg-6">
                                     <div class="d-flex flex-column h-100">
                                         <h5 class="font-weight-bolder">Company Information</h5>
-                                        <p class="mb-5">From colors, cards, typography to complex elements, you will find
-                                            the full documentation.</p>
+                                        <div class="card h-100">
+                                            <div class="card-body p-3">
+                                                <div class="timeline timeline-one-side">
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-bell-55 text-success text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">
+                                                                Company Name</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.name }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-html5 text-danger text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Company
+                                                                Address</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.address }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-cart text-info text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Stablish
+                                                                Year</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.stablish_year }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-credit-card text-warning text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Company Info
+                                                            </h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.company_info }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block mb-3">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-key-25 text-primary text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Email
+                                                                Address</h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                                                {{ form.email_address }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-block">
+                                                        <span class="timeline-step">
+                                                            <i class="ni ni-money-coins text-dark text-gradient"></i>
+                                                        </span>
+                                                        <div class="timeline-content">
+                                                            <h6 class="text-dark text-sm font-weight-bold mb-0">Phone Number
+                                                            </h6>
+                                                            <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">{{
+                                                                form.phone }}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                                 <div class="col-lg-5 ms-auto text-center mt-5 mt-lg-0">
                                     <div class=" border-radius-lg h-100">
