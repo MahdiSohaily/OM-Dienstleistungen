@@ -21,7 +21,7 @@ const props = defineProps({
                                     {{ page.form_desc }}
                                 </p>
                             </div>
-                            <form action="https://formspree.io/f/xlekqzwk" id="contact-form" method="post"
+                            <form action="https://formspree.io/f/myyqygae" id="contact-form" method="post"
                                 autocomplete="off">
                                 <div class="card-body pb-2">
                                     <div class="row">
