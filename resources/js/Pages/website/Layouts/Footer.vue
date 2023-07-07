@@ -43,7 +43,7 @@ const props = defineProps({
         </div>
         <div class="col-lg-6 ms-auto">
           <p class="text-white">
-            O&M Dienstleistungen GbR </p>
+            {{ name }} GbR </p>
           <p class="text-white">
             Am Tonschuppen 2
           </p>
