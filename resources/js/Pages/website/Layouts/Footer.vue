@@ -41,10 +41,21 @@ const props = defineProps({
             Copyright © 2023 {{ name }}.
           </p>
         </div>
-        <div class="col-lg-6 ms-auto text-center ">
-          <p class="mb-5 text-md text-white font-weight-bold">
-            “Saubere Räume schaffen eine klare Perspektive und positive Energie“
+        <div class="col-lg-6 ms-auto">
+          <p class="text-white">
+            O&M Dienstleistungen GbR </p>
+          <p class="text-white">
+            Am Tonschuppen 2
           </p>
+          <p class="text-white">53347 Alfter</p>
+          <a class="text-white" href="tel:04917620727313">
+            <span class="fa fa-phone text-white pe-2" aria-hidden="true"></span>(+49) 176 20727313
+          </a>
+          <br>
+          <a class="text-white me-xl-4 me-4" href="tel:04917681155605">
+            <span class="fa fa-phone text-white pe-2" aria-hidden="true"></span>(+49) 176 81155605
+          </a>
+          <br>
           <a href="https://instagram.com/om_dienstleistungen?igshid=NTc4MTIwNjQ2YQ==" target="_blank"
             class="text-white me-xl-4 me-4">
             <span class="fab fa-instagram" aria-hidden="true"></span>

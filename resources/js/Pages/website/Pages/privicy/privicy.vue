@@ -43,7 +43,8 @@ Am Tonschuppen 2
                        </pre>
                         <h5>Vertreten durch:</h5>
                         <pre>
-[Vor- und Nachnamen der vertretungsberechtigten Personen]
+Mustafa Tekbas
+Osman Mete Yilmaz
                         </pre>
                         <h5>Kontakt</h5>
 
@@ -59,9 +60,12 @@ Am Tonschuppen 2
                         <pre>
 Berufsbezeichnung:
 Reinigungskraft
+<br>
 Zuständige Kammer:
+<br>
 Verliehen in:
 Deutschland
+<br>
 Es gelten folgende berufsrechtliche Regelungen:
                         </pre>
                         <h4>Angaben zur Berufshaftpflichtversicherung</h4>
@@ -69,7 +73,8 @@ Es gelten folgende berufsrechtliche Regelungen:
                         <pre>
 Helvetia Versicherungen
 61377 Friedrichsdorf
-Geltungsraum der Versicherung:
+<br>
+<b>Geltungsraum der Versicherung:</b>
 Deutschland
                         </pre>
                         <h4>EU-Streitschlichtung</h4>
