@@ -1,8 +1,45 @@
 <script setup>
-
+import { onMounted } from 'vue';
 const props = defineProps({
     page: Object
 });
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: 'post',
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            setTimeout(() => {
+                status.innerHTML = "";
+            }, 1000);
+
+        } else {
+            status.innerHTML = "Thanks for your submission!";
+            setTimeout(() => {
+                status.innerHTML = "";
+            }, 1000);
+        }
+    }).catch(error => {
+        status.innerHTML = "Thanks for your submission!";
+        setTimeout(() => {
+            status.innerHTML = "";
+        }, 1000);
+    });
+}
+
+onMounted(() => {
+    var form = document.getElementById("my-form");
+    form.addEventListener("submit", handleSubmit)
+});
+
 </script>
 <template>
     <header>
@@ -21,8 +58,7 @@ const props = defineProps({
                                     {{ page.form_desc }}
                                 </p>
                             </div>
-                            <form action="https://formspree.io/f/myyqygae" id="contact-form" method="post"
-                                autocomplete="off">
+                            <form id="my-form" action="https://formspree.io/f/myyqygae" method="post" autocomplete="off">
                                 <div class="card-body pb-2">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -47,7 +83,9 @@ const props = defineProps({
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn bg-gradient-info mt-3 mb-0">
+                                            <p style="color:seagreen" id="my-form-status"></p>
+                                            <button id="my-form-button" type="submit"
+                                                class="btn bg-gradient-info mt-3 mb-0">
                                                 Nachricht senden
                                             </button>
                                         </div>
